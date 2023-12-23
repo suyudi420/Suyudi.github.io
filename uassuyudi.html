@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Suyudi</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #cbf3ff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h1,
+        h2,
+        p {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        audio,
+        video {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Selamat Datang di Website Pribadi Suyudi!</h1>
+        <p>Hallo ini adalah website pribadi Saya</p>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profil">
+        <h2>Profil Saya</h2>
+        <p>Berikut profil singkat tentang saya
+            saya adalah seorang mahasiswa universitas pamulang semester 5 jurusan teknik informatika, saya kuliah sambil
+            bekerja.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Hallo nama saya adalah Suyudi biasa dipanggil Duy, saya mahasiswa semester 5 di universitas pamulang jurusan
+            teknik informatika, saya kuliah sambil bekerja, saya freelance dan seorang pengusahan muda, impian saya
+            adalah memiliki perusahaan yang memiliki banyak cabang di seluruh indonesia</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="uas1.jpg" alt="Deskripsi Gambar 2">
+        <table>
+            <tr>
+                <th>Foto</th>
+                <th>pesan</th>
+            </tr>
+            <tr>
+                <td>Foto </td>
+                <td>senyum (smiling) adalah ekspresi wajah yang terjadi akibat bergeraknya atau timbulnya suatu gerakan
+                    di bibir atau kedua ujungnya, atau pula di sekitar mata. Kebanyakan orang senyum untuk menampilkan
+                    kebahagian dan rasa senang. Senyum itu datang dari rasa kebahagian atau kesengajaan karena adanya
+                    sesuatu yang membuat dia senyum, bertambah baik raut wajahnya atau menjadi lebih cantik. Senyum
+                    adalah ungkapan hati sehingga tidak bisa di rekayasa. Ketika bibir tersenyum tapi hati sedang kesal
+                    atau gundah maka senyum itu akan terasa hambar. Ketika senyum mengembang sebagai visualisasi hati
+                    yang ikhlas maka akan diterima oleh hati penerima senyuman itu.</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak">
+        <h2>Hubungi Saya</h2>
+        <p>Anda dapat menghubungi saya melalui email: <a
+                href="mailto:kursimejaapaa@gmail.com">kursimejaapaa@gmail.com</a></p>
+        <audio controls>
+            <source src="uas vidio.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <video controls>
+            <source src="film uas.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button onclick="showDialog()">keluar</button>
+    </section>
+
+    <!-- JavaScript untuk Dialog Box -->
+    <script>
+        function showDialog() {
+            var dialogMessage = "Terima kasih telah mengunjungi website saya!, silahkan hubungi saya jika ada pertanyaan lainnya";
+            var userResponse = confirm(dialogMessage);
+
+            if (userResponse) {
+                alert("terimakasih selamat datang kembali!");
+            } else {
+                alert("Have a nice day!");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
